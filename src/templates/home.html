@@ -2,5 +2,12 @@
 <h1>Hello user this is home page</h1>
 <b>{{ my_text}}</b>
 <i>{{ my_number}}</i>
+
+<ul>
+{% for my_sub_item in my_list %}
+    <li>{{ my_sub_item }}</li>
+{% endfor %}
+</ul>
+
 <p>Coming from templates directory</p>
 {% endblock %}
